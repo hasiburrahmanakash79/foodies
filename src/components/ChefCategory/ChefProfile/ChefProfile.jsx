@@ -5,7 +5,7 @@ const ChefProfile = () => {
   const [chefs, setChefs] = useState([]);
 
   useEffect(() => {
-    fetch("https://thai-food-recipes-server-site-hasiburrahmanakash79.vercel.app/chef")
+    fetch("https://foodies-server-phi.vercel.app/chef")
       .then((res) => res.json())
       .then((data) => setChefs(data))
       .catch((error) => console.log(error));

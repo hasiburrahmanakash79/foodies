@@ -6,7 +6,7 @@ const FoodItem = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("https://thai-food-recipes-server-site-hasiburrahmanakash79.vercel.app/foodItem")
+    fetch("https://foodies-server-phi.vercel.app/foodItem")
       .then((res) => res.json())
       .then((data) => setItems(data))
       .catch((error) => console.log(error));

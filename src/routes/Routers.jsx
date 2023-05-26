@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {
         path: '/recipes/:id',
         element: <PrivateRoute><RecipeDetails></RecipeDetails></PrivateRoute>,
-        loader: ({params}) => fetch(`https://thai-food-recipes-server-site-hasiburrahmanakash79.vercel.app/chef/${params.id}`)
+        loader: ({params}) => fetch(`https://foodies-server-phi.vercel.app/chef/${params.id}`)
       }
     ]
   },
